@@ -1,16 +1,16 @@
+<b>What is the main purpose of an operating system? Discuss different types? </b>- An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. So it manages the computer’s memory, processes, devices, files, and security aspects of the system. It also allows us to communicate with the computer without knowing how to speak the computer’s language. Without an operating system, a computer is not useful. Types of operating system:
 
-<b>What is the main purpose of an operating system? Discuss different types? </b>- An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs. So it manages the computer’s memory, processes, devices, files, and security aspects of the system. It also allows us to communicate with the computer without knowing how to speak the computer’s language. Without an operating system, a computer is not useful.
-- Types of operating system:
 - Batch OS
 - Distributed OS
 - Multitasking OS
 - Network OS
 - Real-Time OS
 - Mobile OS
-- Reference: https://www.geeksforgeeks.org/types-of-operating-systems/
 
+Reference: https://www.geeksforgeeks.org/types-of-operating-systems/
 
-<b>What is a socket, kernel and monolithic kernel ? </b>- Socket:A socket is defined as an endpoint for communication, A pair of processes communicating over a network employ a pair of sockets ,one for each process. A socket is identified by an IP address concatenated with a port number.The server waits for incoming client requests by listening to a specified port. Once a request is received, the server accepts a connection from the client socket to complete the connection.
+<b>What is a socket, kernel and monolithic kernel ? </b>- Socket:A socket is defined as an endpoint for communication, A pair of processes communicating over a network employ a pair of sockets ,one for each process. A socket is identified by an IP address concatenated with a port number. The server waits for incoming client requests by listening to a specified port. Once a request is received, the server accepts a connection from the client socket to complete the connection.
+
 - Kernel is the central core component of an operating system that manages operations of computer and hardware. Kernel Establishes communication between user level application and hardware. Manages memory and CPU time. Decides state of incoming processes. Controls Disk, Memory, Task Management
 - Monolithic Kernel (provides good performance but lots of lines of code)It is one of the types of kernel where all operating system services operate in kernel space. It has dependencies between system components. It has huge lines of code which is complex.Example : Unix, Linux, Open VMS, XTS-400 etc.
 
@@ -19,8 +19,8 @@
 - Program:Program is a set of instructions to perform a certain task. Eg: chrome.exe, notepad.exe
 - Thread:Thread is a path of execution within a process. A thread is also known as a lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. For example,Word processor uses multiple threads: one thread to format the text, another thread to process inputs.
 
-
 <b>Define virtual memory, thrashing, threads.  </b>- Virtual Memory:A computer can address more memory than the amount physically installed on the system. This extra memory is actually called virtual memory and it is a section of a hard disk that’s set up to emulate the computer’s RAM.The main visible advantage of this scheme is that programs can be larger than physical memory. Virtual memory serves two purposes. First, it allows us to extend the use of physical memory by using a disk. Second, it allows us to have memory protection, because each virtual address is translated to a physical address.
+
 - Thrashing: Thrashing is a condition or a situation when the system is spending a major portion of its time in servicing the page faults, but the actual processing done is very negligible. High degree of multiprogramming(if number of processes keeps on increasing in the memory), lack of frames (if a process is allocated too few frames, then there will be too many and too frequent page faults) causes Thrashing.
 - Threads:A thread is a single sequential flow of execution of tasks of a process so it is also known as thread of execution or thread of control.
 
@@ -29,8 +29,11 @@
 
 
 <b>What is a deadlock? Different conditions to achieve a deadlock. </b>- A Deadlock is a situation where each of the computer processes waits for a resource which is being assigned to some other process. In this situation, none of the processes gets executed since the resource it needs is held by some other process which is also waiting for some other resource to be released.
-- How deadlock is achieved:  Deadlock happens when Mutual exclusion, hold and wait, No preemption and circular wait occurs simultaneously.
-- Necessary Conditions for deadlock:
+
+**How deadlock is achieved**:  Deadlock happens when Mutual exclusion, hold and wait, No preemption and circular wait occurs simultaneously.
+
+**Necessary Conditions for deadlock:**
+
 - Mutual Exclusion
 - Hold and Wait
 - No preemption
@@ -39,7 +42,7 @@
 
 <b>What is fragmentation? Types of fragmentation. </b>- Fragmentation:An unwanted problem in the operating system in which the processes are loaded and unloaded from memory, and free memory space is fragmented. Processes can’t be assigned to memory blocks due to their small size, and the memory blocks stay unused. It is also necessary to understand that as programs are loaded and deleted from memory, they generate free space or a hole in the memory. These small blocks cannot be allotted to new arriving processes, resulting in inefficient memory use.
 - The conditions of fragmentation depend on the memory allocation system. As the process is loaded and unloaded from memory, these areas are fragmented into small pieces of memory that cannot be allocated to incoming processes. It is called fragmentation.
-- Types of fragmentation:1. Internal2. External
+- Types of fragmentation: 1. Internal 2. External
 
 
 <b>What is spooling ? </b>- SPOOL is an acronym for simultaneous peripheral operations online. Spooling is a process in which data is temporarily held to be used and executed by a device, program, or system.In spooling, there is no interaction between the I/O devices and the CPU. That means there is no need for the CPU to wait for the I/O operations to take place. Such operations take a long time to finish executing, so the CPU will not wait for them to finish.The biggest example of Spooling is printing. The documents which are to be printed are stored in the SPOOL and then added to the queue for printing. During this time, many processes can perform their operations and use the CPU without waiting while the printer executes the printing process on the documents one-by-one.
@@ -116,8 +119,8 @@
 
 <b>Diff between multitasking and multiprocessing </b>
 
-<b>What is DBMS ? Mention advantages.. </b>- Database Management System (DBMS) is a software for storing and retrieving users’ data while considering appropriate security measures. It consists of a group of programs which manipulate the database. The DBMS accepts the request for data from an application and instructs the operating system to provide the specific data. In large systems, a DBMS helps users and other third-party software to store and retrieve data.
-- Advantages:
+<b>What is DBMS ? Mention advantages.. </b>- Database Management System (DBMS) is a software for storing and retrieving users’ data while considering appropriate security measures. It consists of a group of programs which manipulate the database. The DBMS accepts the request for data from an application and instructs the operating system to provide the specific data. In large systems, a DBMS helps users and other third-party software to store and retrieve data. Advantages:
+
 - Improved data sharing
 - Improved data security
 - Better data integration
@@ -132,8 +135,8 @@
 
 <b>What is a database system? </b>
 
-<b>What is RDBMS ? Properties.. </b>- A Relational Database Management system (RDBMS) is a database management system that is based on the relational model. It has the following major components: Table, Record/Tuple/Row, Field, and Column/Attribute. Examples of the most popular RDBMS are MYSQL, Oracle, IBM DB2, and Microsoft SQL Server database.
-- Relational databases have the following properties:
+<b>What is RDBMS ? Properties.. </b>- A Relational Database Management system (RDBMS) is a database management system that is based on the relational model. It has the following major components: Table, Record/Tuple/Row, Field, and Column/Attribute. Examples of the most popular RDBMS are MYSQL, Oracle, IBM DB2, and Microsoft SQL Server database. Relational databases have the following properties:
+
 - Values are atomic.
 - All of the values in a column have the same data type.
 - Each row is unique.
@@ -163,9 +166,8 @@
 
 <b>What is sharding </b>- Sharding is a method of splitting and storing a single logical dataset in multiple databases. By distributing the data among multiple machines, a cluster of database systems can store larger dataset and handle additional requests. Sharding is necessary if a dataset is too large to be stored in a single database. Moreover, many sharding strategies allow additional machines to be added. Sharding allows a database cluster to scale along with its data and traffic growth.
 
-
 <b>Keys in DBMS </b>- A key is a set of attributes that can identify each tuple uniquely in the given relation.
-- Types of Keys:
+
 - Super Key – A superkey is a set of attributes that can identify each tuple uniquely in the given relation. A super key may consist of any number of attributes.
 - Candidate Key – A set of minimal attribute(s) that can identify each tuple uniquely in the given relation is called a candidate key.
 - Primary Key – A primary key is a candidate key that the database designer selects while designing the database. Primary Keys are unique and NOT NULL.
@@ -272,18 +274,15 @@
 <b>Define bandwidth, node and link ? </b>- Bandwidth is the data transfer capacity of a computer network in bits per second (Bps). The term may also be used colloquially to indicate a person’s capacity for tasks or deep thoughts at a point in time.
 - A network is a connection setup of two or more computers directly connected by some physical mediums like optical fibre or coaxial cable. This physical medium of connection is known as a link, and the computers that it is connected to are known as nodes
 
-
 <b>Explain TCP model .. </b>- It is a compressed version of the OSI model with only 4 layers. It was developed by the US Department of Defence (DoD) in the 1860s. The name of this model is based on 2 standard protocols used i.e. TCP (Transmission Control Protocol) and IP (Internet Protocol).
-- 1. Network Access/Link layer : Decides which links such as serial lines or classic Ethernet must be used
-- to meet the needs of the connectionless internet layer. Ex – Sonet, Ethernet
-- 2. Internet : The internet layer is the most important layer which holds the whole
-- architecture together. It delivers the IP packets where they are supposed to be
-- delivered. Ex – IP, ICMP.
-- 3. Transport : Its functionality is almost the same as the OSI transport layer. It
-- enables peer entities on the network to carry on a conversation. Ex – TCP, UDP
-- (User Datagram Protocol)
-- 4. Application : It contains all the higher-level protocols. Ex – HTTP, SMTP, RTP,
-- DNS
+
+1. Network Access/Link layer : Decides which links such as serial lines or classic Ethernet must be used to meet the needs of the connectionless internet layer. Ex – Sonet, Ethernet
+
+2. Internet : The internet layer is the most important layer which holds the whole architecture together. It delivers the IP packets where they are supposed to be delivered. Ex – IP, ICMP.
+
+3. Transport : Its functionality is almost the same as the OSI transport layer. It enables peer entities on the network to carry on a conversation. Ex – TCP, UDP (User Datagram Protocol)
+
+4. Application : It contains all the higher-level protocols. Ex – HTTP, SMTP, RTP,DNS
 
 
 <b>Layers of OSI model </b>- There are majorly 2 main layers in the OSI model:
@@ -310,11 +309,12 @@
 
 
 <b>What is DNS, DNS forwarder, NIC, ? </b>- DNS:
-- 1. DNS is an acronym that stands for Domain Name System.DNS was introduced by Paul Mockapetris and Jon Postel in 1983.
-- 2. It is a naming system for all the resources over the internet which includes physical nodes and applications. It is used to locate resources easily over a network.
-- 3. DNS is an internet which maps the domain names to their associated IP addresses.
-- 4. Without DNS, users must know the IP address of the web page that you wanted to access.
-- DNS Forwarder : A forwarder is used with a DNS server when it receives DNS queries that cannot be resolved quickly. So it forwards those requests to external DNS servers for resolution. A DNS server which is configured as a forwarder will behave differently than the DNS server which is not configured as a forwarder. NIC stands for Network Interface Card. It is a peripheral card attached to the PC to connect to a network. Every NIC has its own MAC address that identifies the PC on the network. It provides a wireless connection to a local area network. NICs were mainly used in desktop computers.
+- DNS is an acronym that stands for Domain Name System.DNS was introduced by Paul Mockapetris and Jon Postel in 1983.
+- It is a naming system for all the resources over the internet which includes physical nodes and applications. It is used to locate resources easily over a network.
+- DNS is an internet which maps the domain names to their associated IP addresses.
+- Without DNS, users must know the IP address of the web page that you wanted to access.
+
+**DNS Forwarder** : A forwarder is used with a DNS server when it receives DNS queries that cannot be resolved quickly. So it forwards those requests to external DNS servers for resolution. A DNS server which is configured as a forwarder will behave differently than the DNS server which is not configured as a forwarder. NIC stands for **Network Interface Card**. It is a peripheral card attached to the PC to connect to a network. Every NIC has its own MAC address that identifies the PC on the network. It provides a wireless connection to a local area network. NICs were mainly used in desktop computers.
 
 
 <b>What is MAC address ? </b>- A media access control address (MAC address) is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment.
@@ -337,9 +337,8 @@
 <b>Firewalls </b>- The firewall is a network security system that is used to monitor the incoming
 - and outgoing traffic and blocks the same based on the firewall security policies. It acts as a wall between the internet (public network) and the networking devices (a private network). It is either a hardware device, software program, or a combination of both. It adds a layer of security to the network.
 
-
 <b>Different type of delays </b>- The delays, here, means the time for which the processing of a particular packet takes place.
-- We have the following types of delays in computer networks:
+
 - Transmission Delay
 - Propagation delay
 - Queueing delay
@@ -370,8 +369,8 @@
 - efficient protocol, however, retransmission of lost data packets is only possible with TCP.
 - TCP provides extensive error checking mechanisms. It is because it provides flow control and acknowledgment of data. UDP has only the basic error checking mechanism using checksums.
 
-
 <b>What happens when you enter “google.com” (very very famous question) </b>- Check the browser cache first if the content is fresh and present in the cache display the same.
+
 - If not, the browser checks if the IP of the URL is present in the cache (browser and OS) if not then requests the OS to do a DNS lookup using UDP to get the corresponding IP address of the URL from the DNS server to establish a new TCP connection.
 - A new TCP connection is set between the browser and the server using three-way handshaking.
 - An HTTP request is sent to the server using the TCP connection.
@@ -391,20 +390,20 @@
 <b>VPN, advantages and disadvantages of it </b>- VPN (Virtual Private Network) : VPN or the Virtual Private Network is a private WAN
 - (Wide Area Network) built on the internet. It allows the creation of a secured tunnel
 - (protected network) between different networks using the internet (public network). By using the VPN, a client can connect to the organisation’s network remotely.
-- Advantages of VPN :
-- 1. VPN is used to connect offices in different geographical locations remotely and is
-- cheaper when compared to WAN connections.
-- 2. VPN is used for secure transactions and confidential data transfer between
-- multiple offices located in different geographical locations.
-- 3. VPN keeps an organisation’s information secured against any potential threats or
-- intrusions by using virtualization.
-- 4. VPN encrypts the internet traffic and disguises the online identity
-- Disadvantages of VPN :
-- 1. Not designed for continuous use
-- 2. Complexity prevents scalability
-- 3. Lack of granular security
-- 4. Unpredictable performance
-- 5. Unreliable availability
 
+**Advantages of VPN :**
+
+- VPN is used to connect offices in different geographical locations remotely and is cheaper when compared to WAN connections.
+- VPN is used for secure transactions and confidential data transfer between multiple offices located in different geographical locations.
+- VPN keeps an organisation’s information secured against any potential threats or intrusions by using virtualization.
+- VPN encrypts the internet traffic and disguises the online identity
+
+**Disadvantages of VPN :**
+
+- Not designed for continuous use
+- Complexity prevents scalability
+- Lack of granular security
+- Unpredictable performance
+- Unreliable availability
 
 <b>LAN</b>- A local area network (LAN) is a collection of devices connected together in one physical location, such as a building, office, or home. A LAN can be small or large, ranging from a home network with one user to an enterprise network with thousands of users and devices in an office or school.
